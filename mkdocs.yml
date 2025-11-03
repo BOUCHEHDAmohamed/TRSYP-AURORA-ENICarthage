@@ -1,0 +1,40 @@
+
+
+```yaml
+site_name: TRSYP-RERO-ENICarthage
+site_url: https://BOUCHEHDAmohamed.github.io/TRSYP-RERO-ENICarthage/
+repo_url: https://github.com/BOUCHEHDAmohamed/TRSYP-RERO-ENICarthage
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: amber
+    - scheme: slate
+      primary: indigo
+      accent: amber
+  features:
+    - navigation.tabs
+    - toc.integrate
+    - search.suggest
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Autonomous Navigation: navigation.md
+  - AI Risk Prediction: risk.md
+  - Emergency Response: response.md
+  - Sensor Diagnostics: diagnostics.md
+  - Hardware & CAD: hardware.md
+  - Technical Report: report.md
+markdown_extensions:
+  - admonition
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            show_root_heading: true
